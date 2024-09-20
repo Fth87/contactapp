@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Apps</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="main__container">
+      <h1 class="main__container-heading">Contact apps</h1>
+      <section class="add_contact-container">
+        <h2 class="main__container-subheading">Add new contact</h2>
+        <form id="contact_form" class="add__contact_container-input">
+          <input type="text" placeholder="Name" class="main__container-input" required />
+          <input type="emia" placeholder="Email" class="main__container-input" required />
+          <button type="submit" class="main__container-button">Add</button>
+        </form>
+      </section>
+      <section class="contact_list_container">
+        <h2>contact list</h2>
+        <div id="contact_list" class="contact__item-container">
+          <div class="contact__detail">
+            <div class="contact__detail-contact">
+              <img src="https://dummyjson.com/icon/emilys/128" alt="Emily" />
+              <div class="contact__detail-person">
+                <p>Emily Johnson</p>
+                <p>Emily.johnson@x.dummyjson.com</p>
+              </div>
+            </div>
+            <div>
+              <button onclick="deleteContact()" class="contact__button">x</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script/script.js"></script>
+  </body>
+</html>
