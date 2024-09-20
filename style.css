@@ -69,14 +69,8 @@ body {
 }
 
 .contact__item-container {
-  justify-content: space-between;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  border-radius: 12px;
-  margin: 12px 0;
-  box-shadow: 0 2px 8px rgb(0, 0, 0, 0.1);
-  justify-self: start;
 }
 
 .contact__detail {
@@ -84,6 +78,16 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 10px 15px;
+
+  width: 100%;
+  border-radius: 12px;
+  margin: 12px 0;
+  box-shadow: 0 2px 8px rgb(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.contact__detail:hover {
+  transform: translate(0px, -5px);
 }
 .contact__detail-contact {
   align-items: center;
@@ -95,6 +99,8 @@ body {
 }
 
 .contact__button {
+  width: 40px;
+  height: 40px;
   background-color: red;
   color: #fff;
   border: none;
@@ -104,8 +110,6 @@ body {
   cursor: pointer;
   transition: background-color 0.3s ease;
   border-radius: 6px;
-  padding: 12px;
-  margin: 12px;
   align-self: center;
 }
 
